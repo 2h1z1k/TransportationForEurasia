@@ -1,14 +1,22 @@
 import React from 'react'
 type TitleProps = {
     title:string
-    text?: string
+    text: string
+    number: string
 }
 
 //const title = <h1>helo React</h1>
 
 
-const Title = (props:TitleProps) => <h1>{props.text}{props.title}</h1>
-
+const Title = (props:TitleProps) => {
+    return( 
+        <>
+            <h1>{props.text}{props.title}</h1>
+            <ul>{props.number}</ul>
+        </>
+    )
+   
+}
 const List = () => {
     let a = 10
     return(
@@ -29,8 +37,8 @@ const List = () => {
 function App() {
     return  ( 
         <div className="App">
-            <Title title="app.js"/>
-            <Title title="test.js"/>
+            <Title title=" app.js" text="hi" number="10"/>
+            <Title title=" test.js" text="hello" number="15"/>
             <List/> 
         </div>
     )
