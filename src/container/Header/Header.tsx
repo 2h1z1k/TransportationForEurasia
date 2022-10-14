@@ -8,6 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import Menu from 'components/Menu/Menu'
 
 type Props = {}
 
@@ -29,7 +30,7 @@ const Header = (props: Props) => {
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                     Fake shop
                 </Typography>
-                <Button color="inherit">Login</Button>
+                <Menu/>
             </Toolbar>
             </Container>
         </AppBar>
