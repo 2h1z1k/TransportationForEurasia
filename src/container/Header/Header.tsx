@@ -31,8 +31,8 @@ const Header = (props: Props) => {
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                     Fake shop
                 </Typography>
-                <Header/>
                 <Menu/>
+                <CartHeader/>
             </Toolbar>
             </Container>
         </AppBar>

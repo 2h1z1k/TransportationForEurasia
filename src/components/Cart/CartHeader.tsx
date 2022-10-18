@@ -4,10 +4,10 @@ type Props = {}
 
 const CartHeader = (props: Props) => {
     return ( 
-        <>
-        <div>0</div>
-        <div>$0</div>
-        </>
+        <div>
+            <div>0</div>
+            <div>$0</div>
+        </div>
     )
 }
 
