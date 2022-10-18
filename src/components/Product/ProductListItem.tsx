@@ -1,5 +1,5 @@
 import { Card, CardContent, CardActions, Button } from '@mui/material'
-import './ProductListItem.css'
+import classes from './ProductListItem.module.css'
 
 type Props = {
     name: string
@@ -19,7 +19,7 @@ const ProductListItem = (props: Props) => {
                 <div>Capacity: {props.capacity} Gb</div>
                 <div>Price: {props.price} $</div>
             </CardContent>
-            <CardActions className="btn-wrap">
+            <CardActions className={`${classes['btn-wrap']}`}>
                 <Button variant="outlined">Add to card</Button>
             </CardActions>
         </Card>
