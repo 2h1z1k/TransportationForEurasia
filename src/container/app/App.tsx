@@ -9,10 +9,6 @@ type Props = {}
 const App = (props: Props) => {
     return ( 
         <>
-            <CssBaseline/>
-            <Header/>
-            <Main />
-            <Footer />
         </>
     )
 }
