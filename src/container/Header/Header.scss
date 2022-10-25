@@ -1,3 +1,19 @@
 .app-bar {
-    background-color: green;
+    background-color: #2f343a;
+    img {
+        width: 150px;
+        margin-right: 20px;
+    }
+    .typography {
+        display: flex;
+        align-items: center;
+        border-left: 1px solid white;
+        img {
+            width: 20px;
+            margin: 0 15px;
+        }
+    }
+    .iconButton {
+        border-radius: 10px;
+    }
 }

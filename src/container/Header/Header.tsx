@@ -9,8 +9,9 @@ import CssBaseline from '@mui/material/CssBaseline'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Menu from 'components/Menu/Menu'
-import CartHeader from 'components/Cart/CartHeader'
 import './Header.scss'
+import Logo from 'components/Logo/Logo'
+import point from 'images/point.png'
 
 type Props = {}
 
@@ -20,24 +21,19 @@ const Header = (props: Props) => {
             <AppBar position="static" className="app-bar">
                 <Container>
                     <Toolbar>
-                        <IconButton
-                            size="large"
-                            edge="start"
-                            color="inherit"
-                            aria-label="menu"
-                            sx={{ mr: 2 }}
-                        >
-                            <MenuIcon />
+                        <IconButton className='iconButton'>
+                            <Logo />
                         </IconButton>
                         <Typography
+                            className="typography"
                             variant="h6"
                             component="div"
                             sx={{ flexGrow: 1 }}
                         >
-                            Fake shop
+                            <img src={point} />
+                            Наши офисы
                         </Typography>
                         <Menu />
-                        <CartHeader />
                     </Toolbar>
                 </Container>
             </AppBar>
