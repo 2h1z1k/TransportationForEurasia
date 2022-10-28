@@ -1,0 +1,17 @@
+.background-footer {
+    background-color: #c8a35f;
+    padding: 20px 0;
+    a {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        list-style-type: none;
+    }
+    .footer-toolbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    ol {
+        padding: 0;
+    }
+}
