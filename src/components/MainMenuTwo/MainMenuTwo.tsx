@@ -22,7 +22,6 @@ const MainMenuTwo = (props: Props) => {
             <Box className='background'>
                 <Container>
                     <Toolbar><h2>УСЛУГИ</h2></Toolbar>
-
                     <Toolbar className='menu'>
                         {mainMenuTwoItem.map(
                             ({
