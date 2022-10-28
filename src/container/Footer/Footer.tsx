@@ -10,6 +10,7 @@ import './Footer.scss'
 
 
 
+
 type Props = {}
 
 const Footer = (props: Props) => {

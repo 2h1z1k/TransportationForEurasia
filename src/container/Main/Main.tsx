@@ -18,6 +18,7 @@ const Main = (props: Props) => {
             <MainMenuOne />
             <MainMenuTwo />
             <Map />
+
         </>
     )
 }
