@@ -1,9 +1,6 @@
 import React from 'react'
-import AppBar from '@mui/material/AppBar'
-import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Toolbar from '@mui/material/Toolbar'
-import Button from '@mui/material/Button'
 import './MainMenuTwo.scss'
 import MainMenuTwoListItem from './MainMenuTwoListItem'
 import mainMenuTwoItem from './mainMenuTwoItem'
@@ -19,7 +16,7 @@ type Props = {
 const MainMenuTwo = (props: Props) => {
     return (
         <>
-            <Box className='background'>
+            <div className='background'>
                 <Container>
                     <Toolbar><h2>УСЛУГИ</h2></Toolbar>
                     <Toolbar className='menu'>
@@ -28,8 +25,9 @@ const MainMenuTwo = (props: Props) => {
                                 name,
                                 description,
                                 image,
-                            }: MainMenuTwoProps) => (
+                            }: MainMenuTwoProps, i) => (
                                 <MainMenuTwoListItem
+                                    key={i}
                                     name={name}
                                     description={description}
                                     image={image}
@@ -38,7 +36,7 @@ const MainMenuTwo = (props: Props) => {
                         )}
                     </Toolbar>
                 </Container>
-            </Box>
+            </div>
         </>
     )
 }

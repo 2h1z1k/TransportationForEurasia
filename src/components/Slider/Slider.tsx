@@ -1,30 +1,26 @@
-import React from 'react'
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
+import { Virtual } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import './Slider.scss'
-import BGSlider from "images/BGSlider.png"
-import AppBar from '@mui/material/AppBar'
-import Toolbar from '@mui/material/Toolbar'
-import Typography from '@mui/material/Typography'
-import Button from '@mui/material/Button'
-import IconButton from '@mui/material/IconButton'
-import MenuIcon from '@mui/icons-material/Menu'
-import CssBaseline from '@mui/material/CssBaseline'
-import Box from '@mui/material/Box'
-import Container from '@mui/material/Container'
 
-type Props = {}
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/virtual';
 
-const Slider = (props: Props) => {
+export default () => {
+	// Create array with 1000 slides
+	const slides = Array.from({ length: 4 }).map(
+		(el, index) => ``
+	);
+
 	return (
-		<>
-			<AwesomeSlider>
-				<div data-src={BGSlider} className="awesomeSlider" />
-				<div data-src={BGSlider} className="awesomeSlider" />
-				<div data-src={BGSlider} className="awesomeSlider" />
-			</AwesomeSlider>
-		</>
-	)
-}
+		<Swiper modules={[Virtual]} spaceBetween={500} slidesPerView={1} virtual className='slider'>
+			{slides.map(() => (
+				<SwiperSlide>
+					<div>
 
-export default Slider
+					</div>
+				</SwiperSlide>
+			))}
+		</Swiper>
+	);
+};

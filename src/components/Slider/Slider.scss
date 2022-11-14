@@ -1,1 +1,11 @@
-
+.slider {
+    background-image: url(/images/Slider.png);
+    height: 445px;
+    text-align: center;
+    .swiper-slide {
+        width: 1900px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
