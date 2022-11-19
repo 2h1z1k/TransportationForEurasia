@@ -1,5 +1,8 @@
 .slider {
     background-image: url(/images/Slider.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 445px;
     text-align: center;
     .swiper-slide {
