@@ -1,6 +1,6 @@
 import React from 'react'
 import Box from '@mui/material/Box'
-import { Container, Toolbar, IconButton } from '@mui/material'
+import { Container, Toolbar} from '@mui/material'
 import './Footer.scss'
 
 
