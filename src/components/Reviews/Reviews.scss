@@ -1,0 +1,43 @@
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.textContent{
+    background-color: #2f343a;
+    color: white;
+    border: 2px solid #c8a35f;
+}
+
+.textField{
+    color:white; 
+    background-color: #2f343a;
+    border: 1px solid #c8a35f ;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.textAutosize{
+    background-color: #2f343a;
+    color: white;
+    outline: none;
+    border: 1px solid #c8a35f;
+    padding: 5px 10px;
+}
+
+.buttonText{
+    background-color: #2f343a;
+    color: #c8a35f;
+    width: 75px;
+    height: 40px;
+    border: 1px solid #c8a35f;
+}
+
+.buttonText:hover{
+    background-color: #c8a35f;
+    color: white;
+    cursor: pointer;
+}

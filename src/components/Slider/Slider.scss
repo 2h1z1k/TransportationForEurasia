@@ -5,10 +5,27 @@
     background-size: cover;
     height: 445px;
     text-align: center;
+    img{
+        height: 90%;
+        width: 100%;
+        border: 1px solid #c8a35f;
+        border-radius: 1px;
+    }
     .swiper-slide {
         width: 1900px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+}
+
+
+
+
+
+.backgroundImg{
+    background-image: url(/images/Slider.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

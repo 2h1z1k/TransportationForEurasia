@@ -18,7 +18,6 @@ const MainMenuTwoListItem = ({
     return (
         <>
             <Button>
-                <a href="#" className='a'>
                     <div className="content-menu">
                         <div className="img-box">
                             <img src={Air} alt={name} className='air' />
@@ -26,7 +25,6 @@ const MainMenuTwoListItem = ({
                         </div>
                         <div className="text">{description}</div>
                     </div>
-                </a>
             </Button>
 
         </>

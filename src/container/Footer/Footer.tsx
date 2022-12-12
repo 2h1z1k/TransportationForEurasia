@@ -23,6 +23,7 @@ const Footer = (props: Props) => {
                     </Toolbar>
                 </Container>
             </Box>
+            
         </>
     )
 }

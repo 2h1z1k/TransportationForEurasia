@@ -1,20 +1,28 @@
-import { Container } from '@mui/material'
+
+//import FirstPage from 'pages/FirstPage/FirstPage'
 import Home from 'pages/Home/Home'
+import SecondPage from 'pages/SecondPage/SecondPage'
+import ThirdPage from 'pages/ThirdPage/ThirdPage'
 import React from 'react'
-import Slider from 'components/Slider/Slider'
-import MainMenuOne from 'components/MainMenuOne/MainMenuOne'
-import MainMenuTwo from 'components/MainMenuTwo/MainMenuTwo'
-import Map from 'components/Map/Map'
 import { Routes, Route } from 'react-router-dom'
 
-type Props = {}
+type Props = {
+    contactLike: {[id:number]:boolean}
+    toggleLikeState:(id:number) => void
+}
 
-const Main = (props: Props) => {
+const Main = ({contactLike, toggleLikeState}: Props) => {
     return (
         <>
             <main>
                 <Routes>
-                    <Route path='Home' element={<Home/>}/>
+                    <Route path='/' element={<Home/>}/>
+                    <Route path='SecondPage' element={<SecondPage/>}/>
+                    <Route path='ThirdPage' element={<ThirdPage
+                    contactLike={contactLike}
+                    toggleLikeState={toggleLikeState}
+
+                    />}/>
                 </Routes>
             </main>
         </>
