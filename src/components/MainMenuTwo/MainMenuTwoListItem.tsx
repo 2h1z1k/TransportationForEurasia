@@ -3,17 +3,20 @@ import Button from '@mui/material/Button'
 import './MainMenuTwoList.scss'
 import Air from 'images/Air.jpg'
 import AirHover from 'images/Air-hover.jpg'
+import MainMenuItems from "components/MainMenu/MainMenuItems"
 
 type Props = {
     name: string
     description: string
     image: string
+
 }
 
 const MainMenuTwoListItem = ({
     name,
     description,
     image,
+    
 }: Props) => {
     return (
         <>

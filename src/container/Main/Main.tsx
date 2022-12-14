@@ -1,6 +1,7 @@
-
-//import FirstPage from 'pages/FirstPage/FirstPage'
+import AirPage from 'pages/AirPage/AirPage'
+import CarPage from 'pages/CarPage/CarPage'
 import Home from 'pages/Home/Home'
+import SeaPage from 'pages/SeaPage/SeaPage'
 import SecondPage from 'pages/SecondPage/SecondPage'
 import ThirdPage from 'pages/ThirdPage/ThirdPage'
 import React from 'react'
@@ -18,11 +19,15 @@ const Main = ({contactLike, toggleLikeState}: Props) => {
                 <Routes>
                     <Route path='/' element={<Home/>}/>
                     <Route path='SecondPage' element={<SecondPage/>}/>
+                    
                     <Route path='ThirdPage' element={<ThirdPage
                     contactLike={contactLike}
                     toggleLikeState={toggleLikeState}
 
                     />}/>
+                    <Route path='AirPage' element={<AirPage/>}/>
+                    <Route path='SeaPage' element={<SeaPage/>}/>
+                    <Route path='CarPage' element={<CarPage/>}/>
                 </Routes>
             </main>
         </>

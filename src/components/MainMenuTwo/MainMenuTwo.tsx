@@ -5,6 +5,8 @@ import './MainMenuTwo.scss'
 import MainMenuTwoListItem from './MainMenuTwoListItem'
 import mainMenuTwoItem from './mainMenuTwoItem'
 import Button from '@mui/material/Button'
+import MainMenu from 'components/MainMenu/MainMenu'
+
 
 type MainMenuTwoProps = {
     name: string
@@ -21,21 +23,7 @@ const MainMenuTwo = (props: Props) => {
                     <Toolbar>
                         <h2>Грузоперевозки по Европе и Азии</h2>
                     </Toolbar>
-                    <Toolbar className="menu">
-                        {mainMenuTwoItem.map(
-                            (
-                                { name, description, image }: MainMenuTwoProps,
-                                i
-                            ) => (
-                                <MainMenuTwoListItem
-                                    key={i}
-                                    name={name}
-                                    description={description}
-                                    image={image}
-                                />
-                            )
-                        )}
-                    </Toolbar>
+                    <MainMenu/>
                     <div className="text">
                         <p>
                             Страны Евросоюза, a также Украина,Белоруссия со
@@ -47,6 +35,7 @@ const MainMenuTwo = (props: Props) => {
                             </a>
                         
                     </div>
+                    
                 </Container>
             </div>
         </>
