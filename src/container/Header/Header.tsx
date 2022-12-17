@@ -26,7 +26,7 @@ const Header = (props: Props) => {
                             component="div"
                             sx={{ flexGrow: 1 }}
                         >
-                            <img src={point} />
+                            <img src={point} alt="" />
                             Наши офисы
                         </Typography>
                         <Menu />

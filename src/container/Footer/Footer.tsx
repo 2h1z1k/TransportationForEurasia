@@ -14,12 +14,12 @@ const Footer = (props: Props) => {
             <Box className='background-footer'>
                 <Container>
                     <Toolbar className='footer-toolbar'>
-                        <a href=""><p>sales@log.ru</p> </a>
-                        <a href=""><div>
+                        <div><p>sales@log.ru</p> </div>
+                        <div><div>
                             <li>+7 (812) 344-56-65</li>
                             <li>+7 (812) 355-56-65</li>
-                        </div></a>
-                        <a href=""><ol>Разработано - D-E-N.ru</ol></a>
+                        </div></div>
+                        <div><ol>Разработано - D-E-N.ru</ol></div>
                     </Toolbar>
                 </Container>
             </Box>

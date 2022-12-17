@@ -1,6 +1,5 @@
 import React from 'react'
 import Maps from 'images/map.png'
-import { Container, Box } from '@mui/material'
 import './Map.scss'
 
 type Props = {}

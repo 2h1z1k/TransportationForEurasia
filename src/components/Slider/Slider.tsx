@@ -15,7 +15,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import "./Slider.scss"
 
-export default () => {
+export default function swiper() {
   return (
     <Swiper
       // install Swiper modules

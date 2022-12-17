@@ -2,17 +2,9 @@ import React from 'react'
 import Container from '@mui/material/Container'
 import Toolbar from '@mui/material/Toolbar'
 import './MainMenuTwo.scss'
-import MainMenuTwoListItem from './MainMenuTwoListItem'
-import mainMenuTwoItem from './mainMenuTwoItem'
-import Button from '@mui/material/Button'
 import MainMenu from 'components/MainMenu/MainMenu'
 
 
-type MainMenuTwoProps = {
-    name: string
-    image: string
-    description: string
-}
 type Props = {}
 
 const MainMenuTwo = (props: Props) => {
