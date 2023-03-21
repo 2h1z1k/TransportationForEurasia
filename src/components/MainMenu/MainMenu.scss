@@ -1,11 +1,12 @@
 
-
+.background{
+    background-color: #2f343a;
+}
 .a {
     width: 352px;
 }
 .box{
     width: 330px;
-
 }
 
 .content-menu {
@@ -61,4 +62,13 @@
         }
     }
 }
+
+
+@media (max-width:320px) {
+    .box{
+        width: auto;
+    }
+    
+}
+
 

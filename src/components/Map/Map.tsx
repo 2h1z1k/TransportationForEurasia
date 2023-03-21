@@ -7,7 +7,7 @@ type Props = {}
 const Map = (props: Props) => {
     return (
         <>
-            <div className='imgmap'>
+            <div className='imgMap'>
                 <img src={Maps} alt="" />
             </div>
         </>

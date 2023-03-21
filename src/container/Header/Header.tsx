@@ -16,7 +16,7 @@ const Header = (props: Props) => {
         <>
             <AppBar position="static" className="app-bar">
                 <Container>
-                    <Toolbar>
+                    <Toolbar className='headerScss'>
                         <IconButton className='iconButton'>
                             <Logo />
                         </IconButton>
@@ -27,7 +27,7 @@ const Header = (props: Props) => {
                             sx={{ flexGrow: 1 }}
                         >
                             <img src={point} alt="" />
-                            Наши офисы
+                            <p>Наши офисы</p> 
                         </Typography>
                         <Menu />
                     </Toolbar>

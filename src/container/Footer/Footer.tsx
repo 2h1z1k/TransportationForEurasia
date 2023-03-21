@@ -20,6 +20,7 @@ const Footer = (props: Props) => {
                             <li>+7 (812) 355-56-65</li>
                         </div></div>
                         <div><ol>Разработано - D-E-N.ru</ol></div>
+                        <dl>1</dl>
                     </Toolbar>
                 </Container>
             </Box>

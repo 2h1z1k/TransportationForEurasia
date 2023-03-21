@@ -1,7 +1,7 @@
 .cardContent{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 }
 
 
@@ -9,6 +9,9 @@
     background-color: #2f343a;
     color: white;
     border: 2px solid #c8a35f;
+    div{
+        margin: 10px  5px;
+    }
 }
 
 .textField{
@@ -26,14 +29,19 @@
     outline: none;
     border: 1px solid #c8a35f;
     padding: 5px 10px;
+    width: 50%;
+    padding: 10px;
 }
 
 .buttonText{
+    font-size: 25px;
     background-color: #2f343a;
     color: #c8a35f;
-    width: 75px;
-    height: 40px;
-    border: 1px solid #c8a35f;
+    width: 120px;
+    height: 60px;
+    margin-top: 20px ;
+    border: 2px solid #c8a35f;
+    border-radius: 10px;
 }
 
 .buttonText:hover{

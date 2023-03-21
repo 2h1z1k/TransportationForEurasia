@@ -12,8 +12,41 @@
             width: 20px;
             margin: 0 15px;
         }
+        p{
+            margin: 0px;
+        }
     }
     .iconButton {
         border-radius: 10px;
+    }
+}
+@media (max-width:425px) {
+    .app-bar {
+        background-color: #2f343a;
+        .headerScss{
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        img {
+            width: 150px;
+            margin-right: 20px;
+        }
+        .typography {
+            display: flex;
+            align-items: center;
+            border-left: 1px solid white;
+            img {
+                width: 20px;
+                margin: 0 15px;
+            }
+            p{
+                margin: 0px;
+                font-size: 15px;
+                height: 100%;
+            }
+        }
+        .iconButton {
+            border-radius: 10px;
+        }
     }
 }
