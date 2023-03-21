@@ -16,7 +16,7 @@ const SecondPage = (props: Props) => {
                         <div className="img-box-second-page">
                             <img src={Movers} alt="" />
                         </div>
-                        <div className="text">
+                        <div className="secondPageText">
                             <ol>
                                 КОМПАНИЯ TAGLINE GOES HERE ЛИДЕР РЫНКА
                                 ЭКСПРЕСС-ДОСТАВКИ ПОСЫЛОК ПО ВСЕЙ ЕВРОПЕ И АЗИИ.

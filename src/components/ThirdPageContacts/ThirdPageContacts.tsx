@@ -10,6 +10,7 @@ type ThirdPageContactsProps ={
     image:string
     description:string
     id:number
+    phoneNumber:string
 }
 
 
@@ -31,15 +32,18 @@ const ThirdPageContacts = ({contactLike, toggleLikeState}: Props) => {
                         description,
                         image,
                         id,
+                        phoneNumber
                     }:ThirdPageContactsProps) => (
                         <Grid item key={id}>
                         <ThirdPageContactsList
                         id={id}
                         name={name}
+                        phoneNumber={phoneNumber}
                         description={description}
                         image={image}
                         isLiked={contactLike[id]}
                         toggleLikeState={toggleLikeState}
+                        
                         />
                         </Grid>
                     )

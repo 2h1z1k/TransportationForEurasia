@@ -10,6 +10,7 @@ type Props = {
     description: string
     isLiked?: boolean
     id:number
+    phoneNumber:string
     toggleLikeState:(id:number) => void
 }
 
@@ -18,6 +19,7 @@ const ThirdPageContactsList = ({
     name,
     description,
     image,
+    phoneNumber,
     isLiked = false,
     toggleLikeState
 }: Props) => {
@@ -29,8 +31,9 @@ const ThirdPageContactsList = ({
                         <img src={image} alt="" />
                     </div>
                     <div className="contact-text">
-                        <ol>{name}</ol>
-                        <li>{description}</li>
+                        <li><strong>Имя Фамилия:</strong> {name}</li>
+                        <li><strong>Номер телефона:</strong> {phoneNumber}</li>
+                        <li><strong>Досье:</strong> {description}</li>
                     </div>
                     <Button
                     onClick={()=> toggleLikeState(id)}

@@ -24,10 +24,8 @@ const MainMenuTwo = (props: Props) => {
                         
                             <a href="https://2h1z1k.github.io/Market3/">
                                 <button>ПОДРОБНЕЕ</button>
-                            </a>
-                        
+                            </a>     
                     </div>
-                    
                 </Container>
             </div>
         </>
